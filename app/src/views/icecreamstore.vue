@@ -1,25 +1,26 @@
 <template>
-  <div class="container"></div>
-  <h1>Ice Cream DIY store</h1>
-  <img src="chocolate.png" alt="" />
+  <div class="container">
+    <h1>Ice Cream DIY Store</h1>
+    <div v-for="icecream in icecreams" :key="icecream.flavor"></div>
+    <p>{{ icecreams.flavor }}</p>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const iceCreamMenu = ref([
-  { flavor: 'Vanilla', price: 3.99 },
-  { flavor: 'Chocolate', price: 4.99 },
-  { flavor: 'Strawberry', price: 4.49 },
-  { flavor: 'Mint Chocolate Chip', price: 5.49 },
-  { flavor: 'Cookies and Cream', price: 4.99 },
-  { flavor: 'Rocky Road', price: 5.99 },
-  { flavor: 'Butter Pecan', price: 5.49 },
-  { flavor: 'Coffee', price: 4.49 },
-  { flavor: 'Pistachio', price: 5.99 },
-  { flavor: 'Cookie Dough', price: 5.49 },
-  { flavor: 'Neapolitan', price: 2.97 },
-  { flavor: 'Chocolate Fudge Brownie', price: 7.99 },
-])
+const icecreams = [
+  { flavor: 'Vanilla', picture: 'vanilla.png', price: 3.99 },
+  { flavor: 'Chocolate', picture: 'chocolate.png', price: 4.99 },
+  { flavor: 'Strawberry', picture: 'strawberry.png', price: 4.49 },
+  { flavor: 'Chocolate Mint Chip', picture: 'chocolatemintchip.png', price: 5.49 },
+  { flavor: 'Cookies n Cream', picture: 'cookiesncream.png', price: 4.99 },
+  { flavor: 'Rocky Road', picture: 'rockyroad.png', price: 5.99 },
+  { flavor: 'Mocha', picture: 'mocha.png', price: 5.49 },
+  { flavor: 'Coffee', picture: 'coffee.png', price: 4.49 },
+  { flavor: 'Chocolate Chip Cookie', picture: 'chocolatechipcookie.png', price: 7.99 },
+  { Container: 'Cake Cone', picture: 'cakecone.png', price: 5.99 },
+  { Container: 'Sugar Cone', picture: 'sugarcone.png', price: 5.49 },
+  { Container: 'Cup', picture: 'cup.png', price: 2.97 },
+]
 </script>
 
 <style lang="scss" scoped></style>
