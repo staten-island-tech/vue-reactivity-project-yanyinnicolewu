@@ -1,8 +1,11 @@
 <template>
   <div class="container">
     <h1>Ice Cream DIY Store</h1>
-    <div v-for="icecream in icecreams" :key="icecream.flavor"></div>
-    <p>{{ icecreams.flavor }}</p>
+    <div v-for="item in icecreams" :key="item.flavor || item.Container" class="card">
+      <h2>{{ item.flavor || item.Container }}</h2>
+      <img :src="item.picture" alt="" />
+      <p>${{ item.price }}</p>
+    </div>
   </div>
 </template>
 
