@@ -22,7 +22,7 @@ const icecreams = [
   { flavor: 'Chocolate Chip Cookie', picture: 'chocolatechipcookie.png', price: 7.99 },
   { Container: 'Cake Cone', picture: 'cakecone.png', price: 5.99 },
   { Container: 'Sugar Cone', picture: 'sugarcone.png', price: 5.49 },
-  { Container: 'Cup', picture: 'cup.png', price: 2.97 },
+  { Container: 'Cup', picture: 'cup1.png', price: 2.97 },
 ]
 </script>
 
