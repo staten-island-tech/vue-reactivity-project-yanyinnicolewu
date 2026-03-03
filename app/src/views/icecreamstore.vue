@@ -1,3 +1,16 @@
+<!-- <template>
+  <div class="container">
+    <Hi
+      @click="addToCart(icecream)"
+      v-for="icecream in icecreams"
+      :key="icecream.name"
+      :icecream="icecream"
+    >
+      <button>Add to Cart</button>
+    </Hi>
+  </div>
+</template> -->
+
 <template>
   <div class="container">
     <h1>Ice Cream DIY Store</h1>
@@ -10,7 +23,13 @@
 </template>
 
 <script setup>
-const icecreams = [
+import { ref } from 'vue'
+function addToCart(item) {
+  console.log(item)
+}
+import Hi from '@/components/hi.vue'
+
+const icecreams = ref([
   { flavor: 'Vanilla', picture: 'vanilla.png', price: 3.99 },
   { flavor: 'Chocolate', picture: 'chocolate.png', price: 4.99 },
   { flavor: 'Strawberry', picture: 'strawberry.png', price: 4.49 },
@@ -23,7 +42,7 @@ const icecreams = [
   { Container: 'Cake Cone', picture: 'cakecone.png', price: 5.99 },
   { Container: 'Sugar Cone', picture: 'sugarcone.png', price: 5.49 },
   { Container: 'Cup', picture: 'cup1.png', price: 2.97 },
-]
+])
 </script>
 
 <style scoped></style>
