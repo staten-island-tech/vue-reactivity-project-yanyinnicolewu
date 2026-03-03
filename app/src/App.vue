@@ -1,7 +1,11 @@
 <template>
-  <IceCreamStore />
+  <div>
+    <Routerlink to="/icecreamstore"> Vue Lists </Routerlink>
+
+    <RouterView />
+  </div>
 </template>
 
-<script setup>
-import IceCreamStore from './views/icecreamstore.vue'
-</script>
+<script setup></script>
+
+<style scoped></style>
