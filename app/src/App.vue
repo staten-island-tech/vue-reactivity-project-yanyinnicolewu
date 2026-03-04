@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Routerlink to="/icecreamstore"> Vue Lists </Routerlink>
+    <Routerlink to="/icecreamstore"></Routerlink>
 
     <RouterView />
   </div>
