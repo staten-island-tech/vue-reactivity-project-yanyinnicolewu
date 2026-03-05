@@ -3,7 +3,7 @@
     <h1>Ice Cream DIY Store</h1>
 
     <Hi v-for="icecream in icecreams" :key="icecream.name" :icecream="icecream">
-      <button @click="addToCart(icecream)">Add to Cart</button>
+      <button @click="addToUrIceCream(icecream)">Add to Ur IceCream</button>
     </Hi>
 
     <ul>
@@ -20,9 +20,9 @@ import Hi from '@/components/hi.vue'
 
 const bought = ref([])
 
-function addToCart(icecream) {
+function addToUrIceCream(icecream) {
   bought.value.push(icecream)
-  console.log(`${icecream.name} - $${cecrea.price}`)
+  console.log(`${icecream.name} - $${icecream.price}`)
 }
 
 const icecreams = ref([
