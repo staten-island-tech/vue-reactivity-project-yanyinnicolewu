@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2>{{ icecream.name }}</h2>
-    <h3>{{ icecream.prices }}</h3>
-    <img :src="icecream.img" alt="" />
+    <img :src="icecream.picture" />
+    <h3>{{ icecream.price }}</h3>
     <slot></slot>
   </div>
 </template>
@@ -24,6 +24,6 @@ div {
   justify-content: space-around;
   height: 300px;
   width: 200px;
-  border: 3px solid black;
+  border: 3px solid white;
 }
 </style>
