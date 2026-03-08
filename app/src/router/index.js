@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import icecreamstore from '@/views/icecreamstore.vue'
+import SmiskiStore from '@/views/SmiskiStore.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/icecreamstore',
+      path: '/smiskistore',
       name: 'home',
-      component: icecreamstore,
+      component: SmiskiStore,
     },
   ],
 })

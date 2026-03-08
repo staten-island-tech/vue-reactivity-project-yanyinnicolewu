@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Routerlink to="/icecreamstore"></Routerlink>
+    <Routerlink to="/smiskistore"></Routerlink>
 
     <RouterView />
   </div>

@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <h2>{{ icecream.name }}</h2>
-    <img :src="icecream.picture" />
-    <h3>{{ icecream.price }}</h3>
+  <div class="smiski-card">
+    <img :src="smiski.picture" />
+    <h3>{{ smiski.name }}</h3>
+    <p>${{ smiski.price }}</p>
     <slot></slot>
   </div>
 </template>
 
 <script setup>
 defineProps({
-  icecream: {
+  smiski: {
     type: Object,
     required: true,
   },
@@ -17,13 +17,19 @@ defineProps({
 </script>
 
 <style scoped>
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 300px;
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.smiski-card {
+  text-align: center;
   width: 200px;
-  border: 3px solid white;
+  border: 1px solid #12452b;
+  background-color: #9fe3a9;
+  border-radius: 10px;
+  padding: 10px;
 }
 </style>
