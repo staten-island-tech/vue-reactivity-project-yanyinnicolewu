@@ -1,9 +1,9 @@
 <template>
   <div class="storetitle">Smiski Store</div>
   <div class="container">
-    <Hi v-for="smiski in smiskis" :key="smiski.name" :smiski="smiski">
+    <smiskibuy v-for="smiski in smiskis" :key="smiski.name" :smiski="smiski">
       <button @click="addToCart(smiski)">Add to Ur Cart</button>
-    </Hi>
+    </smiskibuy>
 
     <!-- <p>Total: ${{ total }}</p> -->
   </div>
@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import Hi from '@/components/hi.vue'
+import smiskibuy from '@/components/smiski-buy.vue'
 
 const bought = ref([])
 const total = ref(0)
