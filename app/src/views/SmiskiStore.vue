@@ -9,7 +9,7 @@
   </div>
   <div class="urcart">
     <h2>Your Cart</h2>
-    <p>Total: ${{ total }}</p>
+    <p>Total: ${{ total.toFixed(2) }}</p>
     <ul>
       <li v-for="item in bought" :key="item.name">
         {{ item.name }}: ${{ item.price }} <button @click="deleteItem(item)">remove</button>
