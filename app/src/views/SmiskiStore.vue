@@ -36,7 +36,7 @@ function deleteItem(item) {
 
   let sum = 0
   bought.value.forEach((smiski) => {
-    sum += smiski.price
+    sum -= smiski.price
   })
   total.value = sum
 }
